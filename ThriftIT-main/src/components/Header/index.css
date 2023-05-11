@@ -1,0 +1,204 @@
+/* ------------------
+HEADER
+--------------------*/
+:root {
+  --vert-vinted: #0d1230;
+  --light-grey-vinted: #ebedee;
+}
+
+.header {
+  height: 100%;
+  background-color: rgba(196, 194, 198, 0.927);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 20px;
+}
+
+.logo {
+  height: 40px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 400px;
+}
+
+.btsConnect {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+}
+
+.btsConnect div {
+  margin: 0 10px;
+}
+.btWhite {
+  background-color: #fff;
+  border: 1px solid var(--vert-vinted);
+  color: var(--vert-vinted);
+}
+
+.btBlue {
+  background-color: var(--vert-vinted);
+  border: 1px solid var(--vert-vinted);
+  color: white;
+}
+
+.btWhite,
+.btBlue {
+  text-decoration: none;
+  font-size: 12px;
+  height: 30px;
+  min-width: 115px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+/* --- Hero --- */
+
+.hero {
+  background: center / cover no-repeat url("/src/assets/img/hero01.jpg");
+  height: 500px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.tear {
+  position: absolute;
+  bottom: -10px;
+  right: 0px;
+  /* background-color: red; */
+  height: 20%;
+  width: 100%;
+}
+
+.home-hero-ready {
+  background-color: #eaeaec;
+  border: solid 1px var(--light-grey-vinted);
+  border-radius: 5px;
+  height: 220px;
+  width: 360px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 50px;
+  font-size: 34px;
+  line-height: 45px;
+}
+
+.home-hero-ready-bt {
+  width: 70%;
+  height: 40px;
+  font-size: 18px;
+  margin-top: 30px;
+}
+
+/* ---Filters and sort---*/
+
+.filtersBar {
+  display: flex;
+  align-items: center;
+}
+
+.searchFilter {
+  display: flex;
+  flex-direction: column;
+  margin-left: 30px;
+}
+
+/*--------------------------
+MEDIAS QUERIES
+----------------------------*/
+
+/*------Max 1218 px------*/
+@media (max-width: 1218px) {
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .btsConnect {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  .btBlue {
+    margin-top: 10px;
+  }
+  /*Hero*/
+
+  .tear {
+    bottom: -15px;
+  }
+}
+/*------Max 897 px------*/
+@media (max-width: 897px) {
+  .header {
+    flex-direction: column;
+  }
+  .logo {
+    height: 40px;
+    margin-bottom: 20px;
+  }
+  .buttons {
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .btsConnect {
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    width: 50%;
+  }
+
+  .btBlue {
+    margin-top: 0px;
+  }
+  .tear {
+    bottom: -30px;
+  }
+}
+/*------Max 647 px------*/
+@media (max-width: 647px) {
+  .searchFilter {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 0px;
+  }
+  .filtersBar {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .btsConnect {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 90%;
+  }
+
+  .btsConnect div {
+    margin: 0 10px;
+  }
+  .tear {
+    bottom: -40px;
+  }
+  .home-hero-ready {
+    margin-left: 30px;
+  }
+}

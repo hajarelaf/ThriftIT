@@ -1,0 +1,56 @@
+/* ------------------
+OFFER CARDS
+--------------------*/
+:root {
+  --vert-vinted: #361b52;
+  --light-grey-vinted: #ebedee;
+}
+
+.offer-content {
+  height: 450px;
+  width: 240px;
+  background-color: white;
+  /* border: solid 1px black; */
+  margin-bottom: 10px;
+  padding: 10px;
+  color: grey;
+  font-size: 14px;
+}
+
+.offer-content:not(:nth-child(5n)) {
+  margin-right: 10px;
+}
+
+.offer-content a {
+  color: grey;
+}
+
+.offer-content:hover {
+  cursor: pointer;
+}
+
+/* --- Owner --- */
+
+.owner {
+  display: flex;
+  align-items: center;
+}
+
+.avatar {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background-color: var(--vert-vinted);
+  margin-right: 10px;
+  object-fit: cover;
+  /* border: 2px solid var(--vert-vinted); */
+}
+
+/* --- Product --- */
+
+.product-img {
+  width: 240px;
+  height: 330px;
+  object-fit: cover;
+  margin: 10px 0;
+}
